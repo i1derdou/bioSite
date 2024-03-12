@@ -1,0 +1,57 @@
+/*
+Author: David Clemens
+File: custom.css
+Created: 2024-03-08 DC
+Description: Used for custom css functions that overwrite or otherwise alter default bootstrap styles
+*/
+
+@media only screen and (min-width: 1800px) {
+  body {
+    background-image: linear-gradient(#fbc4d3, #ad5870);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top:100px !important;
+  }
+}
+
+/* Note that the addition of the CSS property (content) to dynamically change the image based on the viewport */
+@media (max-width: 768px) {
+  body {
+    padding-top:75px !important;
+  }
+  .hero-mobile {
+    content:url(../images/hero-mobile.png);
+  }
+}
+
+.header {
+  /* */
+}
+
+.bg-secondary {
+  background: #333333 !important;
+}
+
+.bg-primary {
+  background: #901739 !important;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #901739;
+  --bs-btn-border-color: #901739;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #901739;
+  --bs-btn-hover-border-color: #901739;
+  --bs-btn-focus-shadow-rgb: 60, 198, 171;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #901739;
+  --bs-btn-active-border-color: #901739;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #901739;
+  --bs-btn-disabled-border-color: #901739;
+}
